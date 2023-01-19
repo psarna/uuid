@@ -636,7 +636,6 @@ impl Builder {
     /// # Ok(())
     /// # }
     /// ```
-    #[cfg(uuid_unstable)]
     pub const fn from_unix_timestamp_millis(millis: u64, random_bytes: &[u8; 10]) -> Self {
         Builder(timestamp::encode_unix_timestamp_millis(
             millis,

@@ -250,7 +250,7 @@ mod v4;
 mod v5;
 #[cfg(all(uuid_unstable, feature = "v6"))]
 mod v6;
-#[cfg(all(uuid_unstable, feature = "v7"))]
+#[cfg(feature = "v7")]
 mod v7;
 #[cfg(all(uuid_unstable, feature = "v8"))]
 mod v8;

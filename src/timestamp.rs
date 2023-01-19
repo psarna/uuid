@@ -232,7 +232,6 @@ pub(crate) const fn decode_sorted_rfc4122_timestamp(uuid: &Uuid) -> (u64, u16) {
     (ticks, counter)
 }
 
-#[cfg(uuid_unstable)]
 pub(crate) const fn encode_unix_timestamp_millis(millis: u64, random_bytes: &[u8; 10]) -> Uuid {
     let millis_high = ((millis >> 16) & 0xFFFF_FFFF) as u32;
     let millis_low = (millis & 0xFFFF) as u16;
